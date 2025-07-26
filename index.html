@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhancing Dermatology with AI</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<header>
+    <h1 id="title">Enhancing dermatology with AI</h1>
+    <p id="subtitle">Upload an image to predict skin conditions</p>
+    <select id="language-select">
+      <option value="en">English</option>
+      <option value="ta">தமிழ் (Tamil)</option>
+      <option value="hi">हिन्दी (Hindi)</option>
+      <option value="fr">Français (French)</option>
+      <option value="es">Español (Spanish)</option>
+      <option value="ar">العربية (Arabic)</option>
+      <option value="te">తెలుగు (Telugu)</option>
+      <option value="ml">മലയാളം (Malayalam)</option>
+    </select>
+</header>
+
+
+<main>
+  <section class="upload-section">
+    <h2>Upload Image for Prediction</h2>
+    <input type="file" id="imageUpload" accept="image/*">
+    <button id="predictBtn">Predict</button>
+    <br><br>
+    <img id="preview" src="#" alt="Image Preview" style="max-width: 300px; display: none; margin-top: 20px;">
+  </section>
+
+  <div id="customAlert" class="custom-alert" style="display: none;">
+    <p>✅ Image uploaded successfully!</p>
+  </div>
+
+  <div id="predictAlert" class="custom-alert" style="display: none;">
+    <p>✅ Prediction completed successfully!</p>
+  </div>
+
+  <section class="result-section">
+    <h2>Prediction Result:</h2>
+    <p id="predicted-class">Predicted Disease: </p>
+    <p id="confidence">Confidence: </p>
+    <h3 id="disease-info-title">Disease Information:</h3>
+    <p id="disease-description"> </p>
+  </section>
+</main>
+
+<!--<footer>
+  <p>Made with ❤️ for Skin Care</p>
+</footer>-->
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
